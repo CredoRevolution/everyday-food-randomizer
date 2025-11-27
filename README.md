@@ -1,5 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# Everyday Food Randomizer
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Vue 3 + TypeScript + Vite application.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Deploy to GitHub Pages
+
+This project is configured to deploy to GitHub Pages using the `gh-pages` npm package.
+
+Prerequisites:
+- The repo is pushed to GitHub at `https://github.com/<YOUR_GH_USERNAME>/everyday-food-randomizer`.
+- GitHub Pages is enabled for the repository (Settings → Pages → Source: Deploy from a branch → Branch: `gh-pages`).
+
+Commands:
+- Build the project: `npm run build`
+- Deploy to GitHub Pages: `npm run deploy`
+
+Notes:
+- The Vite `base` is set to `/everyday-food-randomizer/` in `vite.config.ts` so assets resolve correctly on Pages.
+- After build, `index.html` is copied to `404.html` to support SPA routing on GitHub Pages.
